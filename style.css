@@ -15,21 +15,21 @@
 body {
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    max-width: 1400px;
-    margin: 0ch auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 30px 80px;
+    padding: 30px 0;
 }
 .header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
+    padding: 20px 60px;
 }
 .head-navigation {
     display: flex;
@@ -110,7 +110,7 @@ body {
 }
 p {
     color: var(--grayish-violet);
-    font-size: 16px;
+    font-size: 14px;
 }
 .btn-main-head {
     align-self: flex-start;
@@ -127,13 +127,11 @@ p {
 .main-head-right img {
     width: 100%;
     transform: translateX(100px);
-
 }
 .main-section {
     width: 100%;
-    height: 120px;
     border-radius: 5px;
-    background-color: var(--very-dark-violet);
+    padding: 20px 60px;   
 }
 form.form {
     display: flex;
@@ -141,8 +139,9 @@ form.form {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 120px;
     border-radius: 5px;
+    background-color: var(--very-dark-violet);
 }
 .input {
     display: flex;
@@ -193,9 +192,13 @@ article {
     align-items: center;
     padding: 50px;
     text-align: center;
+    padding: 50px 60px;
+    background-color: #ece2e2;
 }
+
 article h2 {
-    margin: 10px 0;
+    margin-bottom: 5px;
+    
 }
 article p {
     margin: 0;
@@ -204,22 +207,25 @@ article p {
 .article2 {
     display: flex;
     position: relative;
+    padding: 50px 60px;
     padding-bottom: 130px;
+    background-color: #ece2e2;
 }
 .article2 .middle-line {
     content: '';
-    width: 90%;
-    /*background-color: black;*/
+    width: 80%;
     border: solid 3px var(--cyan);
     position: absolute;
-    top: 130px;
-    left: 0;
+    top: 170px;
+    left: 60px;
     z-index: 1;
 }
 .box {
     background-color: #f8f8f8;
     width: 32%;
     justify-content: center;
+    border-radius: 8px;
+    padding: 0 10px 10px 10px;
 }
 .box img {
     margin-left: 20px;
@@ -265,16 +271,16 @@ article p {
 footer {
     background-color: var(--very-dark-violet);
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 1.5fr 5fr 2fr;
     justify-content: space-between;
     font-size: .7rem;
-    padding: 60px 40px;
+    padding: 50px 60px;
     width: 100%;
 }
 .footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: end;
+    justify-content: space-around;
     margin: 0;
 }
 .logo1 {
@@ -308,6 +314,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
+    border-radius: 10px;
 }
 
 .social-media {
@@ -320,8 +327,11 @@ footer a:hover {
 
 .social-media img {
     margin: 0 5px;
-    width: 20px;
+    width: 17px;
 }
 .logo:hover {
     filter: invert(75%);
+}
+.social-media img:hover {
+    filter: invert(25%);
 }
